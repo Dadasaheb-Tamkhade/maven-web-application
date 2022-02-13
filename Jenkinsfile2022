@@ -3,7 +3,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
     
     def mavenHome = tool name: "maven3.8.4" 
 
-//getting code from github
+//getting code from github..
 stage('checkoutcode'){
 git branch: 'development', credentialsId: '560a072e-3307-42de-9a7a-63a81d9d5eb8', url: 'https://github.com/Dadasaheb-Tamkhade/maven-web-application.git'
     }
